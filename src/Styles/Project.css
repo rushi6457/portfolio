@@ -1,0 +1,232 @@
+
+.project-section{
+
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 80%;
+   margin: auto;
+    gap: 50px;
+    margin-top: 50px;
+  
+}
+.gear-best {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    box-shadow: 2px 2px 2px 2px rgb(232, 239, 241);
+}
+@media screen and (max-width:1050px) {
+    .gear-best{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 10px;
+    }
+
+    .project-description{
+        width: 400px;
+    }
+    .gearbest-info{
+        width: 100%;
+    }
+    .project-screenshot{
+            width: 100%;
+        }
+    .demo-button{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 10px;
+      
+    }
+}
+@media screen and (max-width:550px) {
+    .project-section{
+        margin: auto;
+        padding-left: 10%;
+        width: 90%;
+    }
+
+    .project-main-heading{
+      
+        font-size: 30px;
+       margin-left: -60px;
+    }
+    .project-section{
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .gear-best {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            padding: 10px;
+    }   
+ 
+          .project-description {
+              width: 100%;
+          }
+        .project-screenshot {
+            width: 100%;
+        }
+        .gearbest-info h1{
+            margin-top: -50px;
+            /* font-size: 20px; */
+            text-align: center;
+        }
+}
+.firstpost-info{
+    color: white;
+}
+.naturebasket-info {
+    color: white;
+}
+.gearbest-info {
+    color: white;
+    width: 100%;
+  
+}
+.gearbest-info h1{
+    /* font-size: 40px; */
+    margin-bottom: 10px;
+}
+.first-post{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    box-shadow: 2px 2px 2px 2px rgb(232, 239, 241);
+}
+.nature-basket{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        box-shadow: 2px 2px 2px 2px rgb(232, 239, 241);
+}
+.live-demo-button{
+    padding: 10px;
+    background-color: tomato;
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+    width: 150px;
+   margin-top: 50px;
+  margin-right: 20%;
+    cursor: pointer;
+}
+.live-demo-button:hover{
+    background-color: rgb(243, 149, 132);
+}
+.github-link-button{
+    padding: 10px;
+    background-color: tomato;
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+    width: 150px;
+    cursor: pointer;
+}
+.github-link-button:hover{
+    background-color: rgb(243, 149, 132);
+}
+.project-screenshot{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+.project-description{
+    text-align: justify;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+.tech-stack-head{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.tech-stack-span{
+    margin-top: 10px;
+    margin-bottom: -20px;
+}
+.demo-button{
+    margin-top: -10px;
+    
+
+}   
+.project-main-heading{
+    font-size: 40px;
+   padding-left: 120px;
+}
+
+@media screen and (max-width:1050px) {
+    .first-post {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10px;
+    }
+
+    .firstpost-info {
+        width: 100%;
+    }
+ .demo-button {
+     display: grid;
+     grid-template-columns: repeat(1, 1fr);
+     row-gap: 10px;
+ }
+  
+
+}
+
+@media screen and (max-width:550px) {
+
+
+    .first-post {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10px;
+       
+    }
+     .firstpost-info h1 {
+        margin-top: -50px;
+     
+        text-align: center;
+    } 
+         .demo-button {
+             display: grid;
+             grid-template-columns: repeat(1, 1fr);
+             row-gap: 10px;
+         }
+} 
+
+@media screen and (max-width:1050px) {
+    .nature-basket {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10px;
+    }
+
+    .naturebasket-info {
+        width: 100%;
+    }
+ .demo-button {
+     display: grid;
+     grid-template-columns: repeat(1, 1fr);
+     row-gap: 10px;
+ }
+}
+
+@media screen and (max-width:550px) {
+
+
+    .nature-basket {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10px;
+    }
+    .naturebasket-info h1{
+        margin-top: -50px;
+        text-align: center;
+        font-size: 25px;
+    }
+ .demo-button {
+     display: grid;
+     grid-template-columns: repeat(1, 1fr);
+     row-gap: 10px;
+ }
+}

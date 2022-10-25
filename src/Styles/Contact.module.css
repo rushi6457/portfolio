@@ -1,0 +1,53 @@
+.name {
+padding: 10px;
+    width: 450px;
+     font-size: large;
+    margin-bottom: 10px;
+}
+.email{
+    padding: 10px;
+    width: 450px;
+     font-size: large;
+    margin-bottom: 10px;
+}
+.message{
+    padding: 10px;
+    width: 450px;
+     font-size: large;
+     margin-bottom: 10px;
+}
+.form{
+    width: 450px;
+    margin: auto;
+    font-size: large;
+    
+}
+.send{
+    padding: 10px;
+    width: 450px;
+    background-color: tomato;
+    color: white;
+    font-size: large;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.send:hover{
+    background-color :rgb(243, 65, 65);
+    cursor: pointer;
+}
+.contactHeader{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.socialMediaheading{
+    text-align: center;
+    margin-top: -20px;
+}
+.socialIcons{
+    font-size: 30px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 15px;
+}

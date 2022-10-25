@@ -1,0 +1,66 @@
+.frontEndSkills{
+
+    width: 200px;
+    height: 150px;
+    border: 1px solid white;
+    align-items: center;
+}
+.frontEndSection{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 30px;
+    margin: auto;
+    margin-left: 10%;
+    margin-top: 50px;
+}
+.skillsHeading{
+  
+    text-align: center;
+    text-decoration: underline;
+}
+.backendSkills{
+    width: 200px;
+        height: 150px;
+        border: 1px solid white;
+        align-items: center;
+}
+.backEndSection{
+    display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        gap: 30px;
+        margin: auto;
+        margin-left: 10%;
+        margin-top: 50px;
+}
+.skillsHeadingBack{
+    text-align: center;
+    margin-top: 50px;
+    text-decoration: underline;
+  
+}
+@media screen and (max-width:750px) {
+
+    .frontEndSection{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .backEndSection{
+        display: grid;
+            grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width:450px) {
+
+    .frontEndSection {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 15%;
+    }
+    .backEndSection{
+        display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            padding-left: 15%;
+    }
+}

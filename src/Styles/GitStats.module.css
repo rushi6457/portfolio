@@ -1,0 +1,84 @@
+.statsHeadLanguage{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: underline;
+}
+.gitStats{
+width: 80%;
+    padding-left: 10%;
+    height: 300px;
+}
+.languages{
+    width: 80%;
+    padding-left: 10%;
+    height: 300px;
+ 
+}
+.streakImg{
+    width: 80%;
+        padding-left: 10%;
+        height: 300px;
+}
+.mainStats{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+    margin-left: 10%;
+    margin-bottom: 50px;
+}
+@media screen and (max-width:1040px) {
+    .mainStats{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 0px;
+    }
+     .languages {
+            width: 100%;
+           padding-right: 10%;
+            /* padding-left: 10%; */
+          margin-top: -50px;
+        }
+    .gitStats{
+        width: 100%;
+         padding-right: 10%;
+            margin-top: -50px;
+        }
+    .streakImg{
+        width: 100%;
+        padding-right: 10%;
+        margin-top: -50px;
+    }
+}
+@media screen and (max-width:450px) {
+    .mainStats {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        margin: auto;
+    }
+
+          .languages {
+              width: 100%;
+              /* padding-left: 10%; */
+            padding-right: 10%;
+                margin-top: -50px;
+          }
+         .gitStats {
+             width: 100%;
+             padding-right: 10%;
+             margin-top: -150px;
+         }
+    
+         .streakImg {
+             width: 100%;
+             padding-right: 10%;
+            margin-top: -150px;
+         }
+}
+.gitcalender{
+    align-items: center;
+    margin-left: 20%;
+    width: 60%;
+    margin-bottom: 20px;
+}

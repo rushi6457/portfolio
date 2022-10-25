@@ -1,310 +1,88 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Jost", sans-serif;
-}
 
 
 
-html {
-    font-size: 62.5%;
-}
-
-a {
-    text-decoration: none;
-    
-}
-
-li {
-    list-style: none;
-    
-}
-
-/* 
- 
-/* navbar style start  */
-
-.main-nav {
-    width: 100%;
-    height: 10rem;
-    display: grid;
-    border: 1px solid;
-    /* margin-left: 10%; */
-    background-color: black;
-    /* grid-template-columns: 10rem 1fr 2fr 1fr 10rem; */
-    grid-template-columns: 10rem  1fr 2fr 2fr 2fr 2fr 10rem;
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
-}
-
-.logo {
-    display: grid;
-    /* background-color: #3b5998; */
-    grid-column: 2/3;
-    justify-content: start;
-    align-items: center;
-    
-}
-
-.menu-link {
-    /* grid-column: 3/4; */
-   grid-column: 5/4;
-   margin-right: -200px;
-}
-
-.menu-link ul {
-    height: 10rem;
+.nav-menu {
     display: flex;
-    justify-content: space-evenly;
-    margin-right: -400px;
-    margin-left: 100px;
-    align-items: center;
-   color: white;
 }
 
+.nav-menu li {
+    padding: 0 1rem;
 
-.social-media {
-    grid-column: 4/5;
 }
 
-.social-media ul {
-    height: 10rem;
-    display: grid;
-    grid-template-columns: 3fr repeat(3, 1fr);
-    align-items: center;
-    justify-content: flex-end;
+.nav-menu li a {
+    font-size: 1.5rem;
+    font-weight: 500;
+
 }
 
-.social-media ul li {
-    text-align: right;
-   
-}
-
-.social-media ul li:first-child {
-    grid-column: 2/3;
-}
-
-/* ----------- Grid part ends ----------------- */
-
-.logo h2 {
-    font-size: 2.5rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    background: -webkit-linear-gradient(#eee, rgb(69, 57, 248));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 35px;
-  
-}
-
-.logo h2 span {
-   font-size: 45px;
-}
-
-.menu-link ul li {
-    font-size: 1.8rem;
-   
-}
-
-.menu-link ul li a {
-    text-transform: capitalize;
-    color: rgba(0, 0, 3, 0.8);
-    transition: 0.5s;
-    color: white;
-    font-size: 25px;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-.menu-link ul li:hover>a {
-    transform-origin: left;
+.nav-menu li :hover {
     color: tomato;
-    text-decoration: underline;
-    transition: 0.5s;
 }
 
-.social-media ul li {
-    font-size: 1.8rem;
-}
-
-.social-media .hamburger-menu {
+.hamberger {
     display: none;
 }
 
-
-/* hero section   */
-
-.hero-section {
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.hero-section p {
-    font-size: 3rem;
-    text-transform: capitalize;
-}
-
-.hero-section h1 {
-    font-size: 5rem;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-/* responsive css style  */
-@media (max-width: 1080px) {
-    .main-nav {
-        height: 8rem;
-        grid-template-columns: 2rem 3fr 3fr 1fr 2rem;
-    }
-
-    .logo,
-    .menu-link ul,
-    .social-media ul {
-        height: 8rem;
-    }
-}
-
-/* responsive css style  */
-@media (max-width: 998px) {
-    .main-nav {
-        height: 7rem;
-        grid-template-columns: 2rem 2fr 3fr 2rem 2rem;
-    }
-
-    .menu-link {
-        display: none;
-    }
-
-    .logo,
-    .social-media ul {
-        height: 7rem;
-    }
-
-    .mobile-menu-link {
-        grid-column: 2/4;
-        position: relative;
-        z-index: 99;
-        background-color: black;
-      
-    }
-
-    .mobile-menu-link {
-        margin-top: -2px;
-        height: 20rem;
-        display: grid;
-         /* width: 100%;    */
-        grid-column: 2/5;
+@media screen and (max-width : 1040px) {
+    .nav-menu {
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        padding-left: 3rem;
-        transition: all 1s linear;
-        transform-origin: top;
-        border: 1px solid;
-        margin-left: -25px;
-        margin-right: -25px;
-        margin-left: -100px;
-        /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-            rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
-    }
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(32, 31, 31, 0.9);
+        top: 0;
+        left: -100%;
+        z-index: 10;
+        position: absolute;
+        transition: 0.3s;
+        line-height: 50px;
     
 
-    .mobile-menu-link ul {
-        height: 20rem;
-        display: flex;
-        padding: 5px;
-        justify-content: space-around;
-        flex-direction: column;
-        align-items: start;
     }
-      
+
+    .nav-menu.active {
+        left: 0;
+
+    }
+
+ 
+    .navMenu li a {
+        font-size: 2.5rem;
+        line-height: 45px;
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+            text-align: justify;
+    }
+
   
-
-    .social-media {
-        grid-row: 1/2;
-        grid-column: 3/5;
-        justify-items: end;
-        align-items: center;
-        transition: all 2s linear;
-    }
-
-    .social-media .social-media-desktop {
-        height: 0;
-        display: none;
-    }
-
-    .social-media {
-        height: 7rem;
-        display: flex;
-        justify-self: end;
-        align-items: center;
-    }
-
-    .social-media .hamburger-menu {
-        display: block;
-        font-size: 2.5rem;
-    }
 }
 
-@media (max-width: 798px) {
-    .main-nav {
-        height: 6rem;
-        grid-template-columns: 1rem 2fr 1fr 1fr 1rem;
-    }
 
-    .logo,
-    .social-media ul {
-        height: 6rem;
-    }
-
-    .social-media {
-        height: 6rem;
-        display: flex;
-        justify-self: end;
+/* 
+@media screen and (max-width : 700px) {
+    .navMenu {
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.9);
+        top: 0;
+        right: -100%;
+        z-index: -3;
+        position: absolute;
+        transition: 0.3s;
+        transform-style: flat;
     }
 
-    .social-media .hamburger-menu {
-        display: block;
-        font-size: 2.5rem;
-    }
-}
-
-@media (max-width: 520px) {
-    .main-nav {
-        height: 6rem;
-        grid-template-columns: 1rem 4fr 1fr 1fr 1rem;
+    .nav-menu.active {
+        left: 0;
     }
 
-    .logo,
-    .social-media ul {
-        height: 6rem;
+    .hamberger {
+        display: initial;
     }
-
-    .logo h2 {
-        font-size: 2rem;
-    }
-
-    .social-media {
-        height: 6rem;
-        display: flex;
-        justify-self: end;
-        align-items: center;
-    }
-
-    .social-media .hamburger-menu {
-        display: block;
-        font-size: 2.5rem;
-        
-    }
-
-    /* hero section  */
-
-    .hero-section h1 {
-        font-size: 3.8rem;
-    }
-}
+} */

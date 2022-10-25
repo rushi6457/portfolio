@@ -1,66 +1,75 @@
-import React, { useState } from "react";
-import "./navbar.css";
-
-import { GiHamburgerMenu } from "react-icons/gi";
-
-import { NavLink } from "react-router-dom";
-
+import React, { useState } from 'react';
+//  import { Link } from 'react-router-dom';
+import { Link } from "react-scroll";
+import styles from "./Navbar.module.css"
+import {FaBars} from "react-icons/fa"
+import {FaTimes} from "react-icons/fa"
+import {AiOutlineDownload ,AiOutlineHome,AiOutlineFolderOpen} from "react-icons/ai"
+import About from '../Routes/About';
+import {GrContact} from "react-icons/gr"
+import {BsPersonCheck} from "react-icons/bs"
+import {RiContactsBookLine} from "react-icons/ri"
+import "./Navbar.css"
 const Navbar = () => {
-  const [showMediaIcons, setShowMediaIcons] = useState(false);
-  return (
-    <>
-      <nav className="main-nav">
-        {/* 1st logo part  */}
-        <div className="logo">
-          <h2>
-            {/* <span>T</span>R */}
-            <span>R</span>ushikesh
-          </h2>
-        </div>
+    
+    const [click , setClick ] = useState(false)
+    const [color , setColor] = useState(false)
+    const handleClick = () =>setClick(!click)
+    
+    const changeColor = () =>{
+        if(window.scrollY >= 50){
+            setColor(true)
+        }
+        else{
+            setColor(false)
+        }
+    }
+    window.addEventListener("scroll" , changeColor)
 
-        {/* 2nd menu part  */}
-        <div
-          className={
-            showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
-          }>
-          <ul>
-            <li>
-              <NavLink to="/">Home</NavLink>
-            </li>
-            <li>
-              <NavLink to="/about">about</NavLink>
-            </li>
-            <li>
-              <NavLink to="/projects">Projects</NavLink>
-            </li>
-            <li>
-              <NavLink to="/skills">skills</NavLink>
-            </li>
-             <li>
-              <NavLink to="/contacts">contacts</NavLink>
-            </li>
-          </ul>
-        </div>
+    //    const [tclick, settClick] = useState(false)
+    // const handletClick = () => settClick(!click)
 
-        {/* 3rd social media links */}
-        <div className="social-media">
-         
-          {/* hamburget menu start  */}
-          <div className="hamburger-menu">
-            <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
-              <GiHamburgerMenu color="white" />
-            </a>
-          </div>
-        </div>
-      </nav>
+    // const closeMenu = () => settClick(false)
+//click ? styles.navMenu &&  styles.active : styles.navMenu
+//className={color ? "header" "headerbg" : "header"}
+    return (
+        <div className={styles.header}>
+            <Link to="/"  className={styles.logo}><h1><span>R</span>USHIKESH</h1></Link>
+            <ul className={click ? "nav-menu active"  : "nav-menu"}>
+                <li> 
+                    {/* <Link to="/" >Home</Link> */}
+                        <Link activeClass={styles.active} to="home" spy={true} smooth={true} offset={100} duration={1000}><AiOutlineHome className={styles.navbarIcons}/>Home</Link>
+                </li>
+                  <li>
+                    {/* <Link to="/about" >About</Link> */}
+                 <Link activeClass={styles.active} to="about" spy={true} smooth={true} offset={50} duration={500}><BsPersonCheck className={styles.navbarIcons}/>About</Link>
+                </li>
+                  <li>
+                    {/* <Link to="/projects">Projects</Link> */}
+                       <Link activeClass={styles.active} to="projects" spy={true} smooth={true} offset={50} duration={500}><AiOutlineFolderOpen className={styles.navbarIcons}/>Projects</Link>
+                </li>
+                  <li>
+                    {/* <Link to="/contacts">Contacts</Link> */}
+                        <Link activeClass={styles.active} to="contacts" spy={true} smooth={true} offset={50} duration={500}><RiContactsBookLine className={styles.navbarIcons}/>Contacts</Link>
+                </li>
+                  <li>
+                    <a href='https://drive.google.com/file/d/1NArCjRTp9a0ZPFTInAh2qCXHWzCAYTYJ/view?usp=sharing'>
+                        <button className={styles.resumeButton}><AiOutlineDownload fontSize={'20px'}/>Resume</button>
+                    </a>
+                </li>
+            </ul>
+            <div className={styles.hamberger} onClick={handleClick}>
+                {!click ? (
+                     <FaBars  size={25} style ={{color:'white'}} />
+                ):(
 
-      {/* hero section  */}
-      {/* <section className="hero-section">
-        <p>Welcome to </p>
-        <h1>Thapa Technical</h1>
-      </section> */}
-    </>
-  );
-};
+                   <FaTimes  size={25} style ={{color:'white'}}  />
+                )
+            }
+               
+            </div>
+        </div>
+    );
+}
 
 export default Navbar;

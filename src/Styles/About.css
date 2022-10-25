@@ -1,0 +1,49 @@
+.aboutHeading{
+    color: white;
+    font-size: 50px;
+
+}
+.profileImage{
+    background-color: white;
+    width: 70%;
+    height: 80%;
+   border-radius: 50%;
+   
+}
+.about-section{
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+        padding-left: 10%;
+        /* margin-top: 80%; */
+        gap: 40px;
+      
+        /* position: static; */
+}
+.text-about{
+    text-align: justify;
+    font-size: 20px;
+}
+@media screen and (max-width:850px) {
+       .about-section{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            padding: 10px;
+        }
+    .profileImage{
+        width: 90%;
+    }
+}
+@media screen and (max-width:450px) {
+    .about-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10px;
+    }
+}
+/* @media screen and (min-width:900) {
+    .about-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+} */
