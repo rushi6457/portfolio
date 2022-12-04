@@ -26,15 +26,9 @@ const Navbar = () => {
     }
     window.addEventListener("scroll" , changeColor)
 
-    //    const [tclick, settClick] = useState(false)
-    // const handletClick = () => settClick(!click)
-
-    // const closeMenu = () => settClick(false)
-//click ? styles.navMenu &&  styles.active : styles.navMenu
-//className={color ? "header" "headerbg" : "header"}
     return (
         <div className={styles.header}>
-            <Link to="/"  className={styles.logo}><h1><span>R</span>USHIKESH</h1></Link>
+            <div><Link to="/"  className={styles.logo}><h1><span>R</span>USHIKESH</h1></Link></div>
             <ul className={click ? "nav-menu active"  : "nav-menu"}>
                 <li> 
                     {/* <Link to="/" >Home</Link> */}
@@ -42,15 +36,15 @@ const Navbar = () => {
                 </li>
                   <li>
                     {/* <Link to="/about" >About</Link> */}
-                 <Link activeClass={styles.active} to="about" spy={true} smooth={true} offset={50} duration={500}><BsPersonCheck className={styles.navbarIcons}/>About</Link>
+                 <Link activeClass={styles.active} to="about" spy={true} smooth={true} offset={50} duration={1000}><BsPersonCheck className={styles.navbarIcons}/>About</Link>
                 </li>
                   <li>
                     {/* <Link to="/projects">Projects</Link> */}
-                       <Link activeClass={styles.active} to="projects" spy={true} smooth={true} offset={50} duration={500}><AiOutlineFolderOpen className={styles.navbarIcons}/>Projects</Link>
+                       <Link activeClass={styles.active} to="projects" spy={true} smooth={true} offset={50} duration={1000}><AiOutlineFolderOpen className={styles.navbarIcons}/>Projects</Link>
                 </li>
                   <li>
                     {/* <Link to="/contacts">Contacts</Link> */}
-                        <Link activeClass={styles.active} to="contacts" spy={true} smooth={true} offset={50} duration={500}><RiContactsBookLine className={styles.navbarIcons}/>Contacts</Link>
+                        <Link activeClass={styles.active} to="contacts" spy={true} smooth={true} offset={50} duration={1000}><RiContactsBookLine className={styles.navbarIcons}/>Contacts</Link>
                 </li>
                   <li>
                     <a href='https://drive.google.com/file/d/1NArCjRTp9a0ZPFTInAh2qCXHWzCAYTYJ/view?usp=sharing'>

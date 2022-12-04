@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 // import { Link, Route } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import GithubStats from '../Components/GithubStats';
@@ -8,17 +8,17 @@ import About from './About';
 import styles from "../Styles/Home.module.css"
 import asset2 from "../assets/asset2.jpg"
 const Home = () => {
+
     return (
-        // <div>
-        <>
+    <div data-aos="fade-right"  id='home'>
          <div className={styles.mask}>
                 <img className={styles.intoImg} src={asset2} alt=''/>
         </div>
-        <div id='home' className={styles.hero}>
+        <div className={styles.hero}>
         
         <div className={styles.content}>
             <p className={styles.helloText}>Hello,my name is</p>
-            {/* <Divider orientation='horizontal' color='white' variant={'1px solid white'} /> */}
+         
             <h3 className={styles.nameheading}>Rushikesh Patil </h3>
  
          <p className={styles.designationText}>FULL STACK WEB DEVELOPER</p>
@@ -36,8 +36,9 @@ const Home = () => {
              
         </div>
         </div>
-        </>
+    </div>
     );
+    
 }
 
 export default Home;

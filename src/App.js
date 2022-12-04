@@ -8,14 +8,15 @@ import Contact from './Routes/Contact';
 import Navbar from './Components/Navbar';
 import HeroImage from './Components/HeroImage';
 import Skills from './Routes/Skills';
+import { useState } from 'react';
 import GitCalender from './Routes/GitCalender'
 
 function App() {
+
   return (
          
       <div>
         <Navbar/>
-        {/* <HeroImage/> */}
         <Home/>
         <About/>
         <Skills/>
@@ -23,14 +24,9 @@ function App() {
         <Project/>
         <Contact/>
       </div>
-      //  <Routes>
-      //   <Route path='/' element={<Home/>}></Route>
-      //   <Route path="/about" element={<About/>}></Route>
-      //   <Route path='/projects' element={<Project/>}></Route>
-      //   <Route path='contact' element={<Contact/>}></Route>
-      // </Routes>
-  
+    
   );
+  
 }
 
 export default App;

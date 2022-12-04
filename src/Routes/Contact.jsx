@@ -63,7 +63,7 @@ const Contact = () => {
                     <br />
                     <input onClick={onsubmit}    
                     className={styles.send} type="submit" value="Send" />
-    </form>
+          </form>
                 <p className={styles.socialMediaheading}>Social Network</p>
                 <span className={styles.socialIcons}>
                     <a href="https://github.com/rushi6457" target={'_blank'}><VscGithub/></a>

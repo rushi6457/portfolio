@@ -1,13 +1,17 @@
 .statsHeadLanguage{
     text-align: center;
     padding-top: 20px;
+    color: white;
     padding-bottom: 20px;
     text-decoration: underline;
 }
 .gitStats{
-width: 80%;
-    padding-left: 10%;
+width: 100%;
+    transition: 2s;
     height: 300px;
+}
+.gitStats:hover{
+    transform: rotateY(360deg);
 }
 .languages{
     width: 80%;
@@ -16,23 +20,70 @@ width: 80%;
  
 }
 .streakImg{
-    width: 80%;
-        padding-left: 10%;
+    width: 100%;
+        /* padding-left: 10%; */
         height: 300px;
+        transition: 2s;
+}
+.streakImg:hover{
+    transform: rotateY(360deg);
 }
 .mainStats{
     display: grid;
-    grid-template-columns: repeat(1,1fr);
-    gap: 20px;
-    margin-left: 10%;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    width: 50vw;
+    min-width: 80%;
+    min-height: 80%;
+    /* margin-left: 10%; */
     margin-bottom: 50px;
+    margin: auto;
+    animation-name: box;
+    animation-duration: 2s;
+    animation-direction: alternate;
 }
+@keyframes box{
+    from {
+            width: 0;
+            opacity: 0;
+        }
+    
+        to {
+            width: 50vw;
+            opacity: none;
+    
+        }
+}
+.calender{
+    border: 1px solid white;
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    transition: 2s;
+    animation-name: git;
+    animation-direction: alternate-reverse;
+    box-shadow: rgba(241, 238, 238, 0.35) 0px 5px 15px;
+    margin-bottom: 20px;
+}
+.calender:hover{
+    transform: rotateY(270deg);
+}
+
 @media screen and (max-width:1040px) {
     .mainStats{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         gap: 0px;
+        margin-top: 50px;
+        padding-left: 5%;
     }
+    .statsHeadLanguage {
+            text-align: center;
+            margin-top: 30px;
+            color: white;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
      .languages {
             width: 100%;
            padding-right: 10%;
@@ -54,8 +105,10 @@ width: 80%;
     .mainStats {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
+        gap: 0px;
         margin: auto;
+        padding-left: 5%;
+        margin-top: 50px;
     }
 
           .languages {

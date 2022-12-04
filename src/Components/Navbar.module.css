@@ -9,14 +9,15 @@
     z-index: 10;
     background-color: rgb(8, 8, 8);
 }
+
 .logo{
     padding: 10px;
     padding-left: 10px;
-    font-size: 25px;
+    font-size: 20px;
     letter-spacing: 2px;
 }
 .logo span{
-    font-size: 60px;
+    font-size: 50px;
     color: tomato;
     margin-right: 0px;
 }
@@ -34,8 +35,8 @@
   
 }
 .navMenu li a{
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 200;
    
 } 
 .navMenu li :hover{
@@ -43,43 +44,36 @@
 }
 .hamberger {
     display: none;
+    
 }
 .navbarIcons{
     margin-right: 10px;
     margin-top: 5px;
 }
 @media screen and (max-width : 1040px){
-    /* .navMenu{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100vh;
-        background-color: rgba(226, 69, 69, 0.9);
-        top: 0;
-        left: -100%;
-        z-index: 10;
-        position: absolute;
-        transition: 0.3s;
-        
-    } */
+  
   .header{
-
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: black;
     width: 100%;
   }
     .resumeButton{
-       display: none;
+       display: initial;
     }
-  /* .navMenu.active{
-    left: 0;
-   
-  } */
+    .logo{
+        margin-left: -20%;
+    }
+         /* .logo span{
+             margin-left: -40px;
+         } */
         .hamberger{
             display: initial;
             z-index: 10;
+          
         }
-        /* .navMenu li a{
+        .navMenu li a{
             font-size: 2.5rem;
             line-height: 45px;
             font-weight: 600;
@@ -95,19 +89,35 @@
             text-decoration: none;
             margin-top: 100%;
             z-index: 10;
+            /* background-color:tomato; */
+            width: 100%;
+            padding: 5px;
+            border-radius: 20px;
+            padding-right: 20px;
+            padding-left: 20px;
+            /* color: white; */
+     }
+}
+@media screen and (max-width:450px) {
+    .header {
+            display: flex;
+            justify-content: space-evenly;
             background-color: black;
             width: 100%;
-          
-     } */
-}
-@media screen and (max-width:400px) {
-  
+            align-items: center;
+        }
     .logo{
-        font-size: 20px;
+        font-size: 1rem;
+       
     }
     .logo span{
-        font-size: 40px;
+        font-size: 2.5rem;
     } 
+    .hamberger {
+         display: initial;
+         z-index: 10;
+        
+     }
    
 }
 .resumeButton{
@@ -124,8 +134,8 @@
 .resumeButton:hover{
     background-color: rgb(34, 33, 33);
 }
-/* 
-@media screen and (max-width : 700px) {
+ 
+/* @media screen and (max-width : 850px) {
     .navMenu {
         flex-direction: column;
         justify-content: center;
@@ -148,4 +158,4 @@
     .hamberger {
         display: initial;
     }
-} */
+}  */

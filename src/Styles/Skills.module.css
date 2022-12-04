@@ -7,11 +7,10 @@
 }
 .frontEndSection{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    align-items: center;
-    gap: 30px;
     margin: auto;
-    margin-left: 10%;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-left: 12%;
     margin-top: 50px;
 }
 .skillsHeading{
@@ -28,10 +27,10 @@
 .backEndSection{
     display: grid;
         grid-template-columns: repeat(3, 1fr);
-        align-items: center;
         gap: 30px;
-        margin: auto;
-        margin-left: 10%;
+        margin-left: 12%;
+        /* margin: auto; */
+   
         margin-top: 50px;
 }
 .skillsHeadingBack{
@@ -40,27 +39,122 @@
     text-decoration: underline;
   
 }
-@media screen and (max-width:750px) {
+.skillsHeading{
+    margin-top: 50px;
+}
+.SkillsSection{
+    display: block;
+    margin: auto;
+}
+@media screen and (max-width:1040px) {
 
     .frontEndSection{
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        margin: auto;
+        margin-top: 50px;
+        padding-left: 20%;
+
+    }
+        .SkillsSection {
+            display: block;
+            margin: auto;
+            flex-direction: column;
+        }
+    .skillsHeading{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
     }
     .backEndSection{
         display: grid;
-            grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+        margin-top: 50px;
+    padding-left: 20%;
     }
+}
+@media screen and (max-width:650px) {
+        .frontEndSection{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+           margin: auto;
+           margin-top: 50px;
+            padding-left: 20%;
+    
+    }
+        .SkillsSection {
+            display: block;
+            margin: auto;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .backEndSection{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            margin: auto;
+            margin-top: 50px;
+            padding-left: 20%;
+    }
+    .skillsHeading{
+        text-align: center;
+    }
+    
 }
 @media screen and (max-width:450px) {
 
     .frontEndSection {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        padding-left: 15%;
+        margin-top: 50px;
+        padding-left: 20%;
     }
     .backEndSection{
         display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            padding-left: 15%;
+        grid-template-columns: repeat(1, 1fr);
+         margin: auto;
+        margin-top: 50px;
+        padding-left: 20%;
     }
+        .SkillsSection {
+            display: block;
+            margin: auto;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .skillsHeading{
+            text-align: center;
+        }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

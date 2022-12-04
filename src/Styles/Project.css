@@ -2,20 +2,41 @@
 .project-section{
 
     display: grid;
-    grid-template-columns: repeat(1,1fr);
-    width: 80%;
+    grid-template-columns: repeat(3,1fr);
+    width: 90%;
    margin: auto;
-    gap: 50px;
+    gap: 30px;
     margin-top: 50px;
   
 }
+
+ .project-screenshot{
+
+    width: 100%;
+    height: 100%;
+    transition: transform .3s;
+ }
+  .project-screenshot:hover{
+    transform: scale(1.5);
+  }
+  .demo-button{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly
+  }
 .gear-best {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(1,1fr);
     gap: 50px;
-    box-shadow: 2px 2px 2px 2px rgb(232, 239, 241);
+    padding: 10px;
+    box-shadow: rgba(247, 247, 248, 0.1) 0px 8px 24px, rgba(248, 248, 250, 0.1) 0px 16px 56px, rgba(255, 255, 255, 0.1) 0px 24px 80px;
 }
-@media screen and (max-width:1050px) {
+@media screen and (max-width:850px) {
+    .project-section {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            padding: 10px;
+        }
     .gear-best{
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -30,18 +51,24 @@
     }
     .project-screenshot{
             width: 100%;
+            height: 100%;
+          
         }
+  
     .demo-button{
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(2,1fr);
         row-gap: 10px;
+        margin: auto;
       
     }
 }
 @media screen and (max-width:550px) {
     .project-section{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 10px;
         margin: auto;
-        padding-left: 10%;
         width: 90%;
     }
 
@@ -67,9 +94,8 @@
             width: 100%;
         }
         .gearbest-info h1{
-            margin-top: -50px;
-            /* font-size: 20px; */
-            text-align: center;
+         text-align: center;
+        font-size: 30px;
         }
 }
 .firstpost-info{
@@ -89,15 +115,19 @@
 }
 .first-post{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 50px;
-    box-shadow: 2px 2px 2px 2px rgb(232, 239, 241);
+    padding: 10px;
+    /* box-shadow: 2px 2px 2px 2px rgb(232, 239, 241); */
+box-shadow: rgba(247, 247, 248, 0.1) 0px 8px 24px, rgba(248, 248, 250, 0.1) 0px 16px 56px, rgba(255, 255, 255, 0.1) 0px 24px 80px;
 }
 .nature-basket{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 50px;
-        box-shadow: 2px 2px 2px 2px rgb(232, 239, 241);
+        padding: 10px;
+        /* box-shadow: 2px 2px 2px 2px rgb(232, 239, 241); */
+        box-shadow: rgba(247, 247, 248, 0.1) 0px 8px 24px, rgba(248, 248, 250, 0.1) 0px 16px 56px, rgba(255, 255, 255, 0.1) 0px 24px 80px;
 }
 .live-demo-button{
     padding: 10px;
@@ -106,8 +136,11 @@
     font-weight: 400;
     font-size: 1rem;
     width: 150px;
-   margin-top: 50px;
-  margin-right: 20%;
+    margin-left: 5%;
+
+   /* margin-top: 50px; */
+  /* margin-right: 20%; */
+    
     cursor: pointer;
 }
 .live-demo-button:hover{
@@ -120,6 +153,7 @@
     font-weight: 400;
     font-size: 1rem;
     width: 150px;
+    margin-left: 5%;
     cursor: pointer;
 }
 .github-link-button:hover{
@@ -127,7 +161,7 @@
 }
 .project-screenshot{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     opacity: 0.8;
 }
 .project-description{
@@ -166,12 +200,13 @@
     }
  .demo-button {
      display: grid;
-     grid-template-columns: repeat(1, 1fr);
+     grid-template-columns: repeat(2, 1fr);
      row-gap: 10px;
  }
   
 
 }
+
 
 @media screen and (max-width:550px) {
 

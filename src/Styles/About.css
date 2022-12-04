@@ -1,49 +1,88 @@
 .aboutHeading{
     color: white;
     font-size: 50px;
-
+    width: 100%;
+}
+:target{
+    scroll-margin-top: -100px;
 }
 .profileImage{
-    background-color: white;
-    width: 70%;
-    height: 80%;
-   border-radius: 50%;
-   
+
+    width: 60%;
+    /* margin-left: 150px; */
+    border-radius: 50%;
+    margin-left: 30%;
 }
-.about-section{
+
+#about{
        display: grid;
        grid-template-columns: repeat(2,1fr);
-        padding-left: 10%;
-        /* margin-top: 80%; */
-        gap: 40px;
-      
+        /* padding-left: 10%; */
+        gap: 50px;
+        /* box-shadow: rgba(239, 239, 243, 0.25) 0px 50px 100px -20px, rgba(252, 247, 247, 0.3) 0px 30px 60px -30px, rgba(235, 236, 238, 0.35) 0px -2px 6px 0px inset; */
+        margin-bottom: 100px;
+        width: 90%;
+        /* border: 1px solid white; */
+        padding: 20px;
+        margin: auto;
         /* position: static; */
 }
 .text-about{
     text-align: justify;
     font-size: 20px;
+    width: 130%;
 }
-@media screen and (max-width:850px) {
-       .about-section{
+@media screen and (max-width:1050px) {
+       #about{
             display: grid;
             grid-template-columns: repeat(1,1fr);
             padding: 10px;
+            margin: auto;
+            width: 90%;
         }
     .profileImage{
         width: 90%;
+        margin: auto;
+
+    }
+    .text-about p{
+    text-align: justify;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    }
+    .text-about {
+        text-align: justify;
+        padding: 10px;
+        width: 100%;
+       
+      
     }
 }
 @media screen and (max-width:450px) {
-    .about-section {
+    #about {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         padding: 10px;
+        width: 90%;
+    }
+        .profileImage {
+            width: 80%;
+            margin: auto;
+            justify-content: center;
+            margin-left: 10%;
+        }
+     .text-about {
+         text-align: justify;
+        padding: 10px;
+    }
+    .text-about p {
+    text-align: justify;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 20px;
     }
 }
-/* @media screen and (min-width:900) {
-    .about-section {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 40px;
-    }
-} */
+
