@@ -8,6 +8,7 @@ import "../Styles/About.css"
 const About = () => {
     return (
        <div 
+       data-aos="fade-up"
        className='about-section' id='about'>
             <div className='text-about'>
                 <h1 className='aboutHeading'>About Me</h1>

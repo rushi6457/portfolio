@@ -36,21 +36,27 @@
        #about{
             display: grid;
             grid-template-columns: repeat(1,1fr);
-            padding: 10px;
+            padding: 5px;
             margin: auto;
-            width: 90%;
+            width: 100%;
         }
     .profileImage{
-        width: 90%;
+        width: 70%;
         margin: auto;
+        margin-left: 15%;
 
     }
+   
     .text-about p{
     text-align: justify;
     width: 100%;
     padding: 10px;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 2rem;
+    /* line-height: 20px; */
+    }
+    .aboutHeading{
+        margin-top: 5%;
+        margin-bottom: 2%;
     }
     .text-about {
         text-align: justify;

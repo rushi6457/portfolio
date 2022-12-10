@@ -1,10 +1,10 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { Alert, Form, Spinner } from 'react-bootstrap';
 import {SiLinkedin} from "react-icons/si"
 import {VscGithub} from "react-icons/vsc"
-import { Button } from 'react-bootstrap';
+import {ImMobile2} from "react-icons/im"
 import styles from "../Styles/Contact.module.css"
+import { Box, Container, Flex, Input, Textarea ,Form, FormControl, Button, Text} from '@chakra-ui/react';
 const Contact = () => {
     const [show,setShow] = useState(true)
     const [auth,setAuth] = useState(false)
@@ -39,37 +39,81 @@ const Contact = () => {
   }
 
     return (
-        
-        <div id='contacts' className={styles.fullContacts}>
-                <h1 className={styles.contactHeader}>Connect with Me</h1>
-             <form className={styles.form} ref={form} onSubmit={sendEmail}>
-                  
-                    <input className={styles.name}  
+      <div className={styles.contacts}>
+        <h1 className={styles.mainContactheading}>Contacts</h1>
+      {/* <Flex className={styles.contactflex}>
+          <Box className={styles.formBox}>
+            <Text className={styles.queryhead}>Have a queries?</Text>
+            <p className={styles.queryhead2}>Feel free to connect with me</p>
+              <FormControl>
+                <Input  
+                  className={styles.name}  
+                  type="text" name="user_name"  
+                  onChange={({target})=>setName(target.value)} 
+                  placeholder='Enter Name'></Input>
+                  <br />
+                <Input  
+                    className={styles.name}  
                     type="text" name="user_name"  
-                      onChange={({target})=>setName(target.value)} 
-                    placeholder='Enter Name' />
-                    <br/>
-               
-                    <input className={styles.email} 
-                    type="email" name="user_email" 
-                      onChange={({target})=>setEmail(target.value)} 
-                    placeholder='Enter Email' />
-                    <br/>
-                
-                    <textarea name="message" 
+                    onChange={({target})=>setName(target.value)} 
+                    placeholder='Enter Name'></Input>
+                <br />
+                <Textarea 
+                    name="message" 
                     className={styles.message }
-                       onChange={({target})=>setMessage(target.value)} 
-                    placeholder='Enter Message'  />
-                    <br />
-                    <input onClick={onsubmit}    
-                    className={styles.send} type="submit" value="Send" />
-          </form>
-                <p className={styles.socialMediaheading}>Social Network</p>
-                <span className={styles.socialIcons}>
-                    <a href="https://github.com/rushi6457" target={'_blank'}><VscGithub/></a>
-                <a href='https://www.linkedin.com/in/rushikesh-patil-4a66b8236' target={'_blank'}><SiLinkedin/></a>
-                </span>
-        </div>
+                    onChange={({target})=>setMessage(target.value)} 
+                    placeholder='Enter Message' ></Textarea>
+              </FormControl>
+              <Button 
+                  onClick={onsubmit}    
+                  className={styles.send} 
+                  type="submit" 
+                  value="Send">Submit</Button>
+          </Box> */}
+          {/* <Box className={styles.Contactinfo}>
+              <h3 className={styles.headSocial}>Let's connect over a social media</h3>
+              <Flex className={styles.iconsFlex}><ImMobile2  className={styles.icons}/><Text>+91&nbsp;&nbsp;7709499930</Text></Flex>
+              <Flex className={styles.iconsFlex} ><VscGithub className={styles.icons}/><a href="https://github.com/rushi6457" target={'_blank'}>Github profile</a></Flex>
+              <Flex className={styles.iconsFlex}><SiLinkedin className={styles.icons}/><a href='https://www.linkedin.com/in/rushikesh-patil-4a66b8236' target={'_blank'}>Linkedin profile</a></Flex>
+          </Box> */}
+      {/* </Flex> */}
+
+          <Flex className={styles.mainFlex}>
+                {/* <h3 className={styles.headSocial}>Let's connect over a social media</h3> */}
+                   <Flex className={styles.iconsFlex}><ImMobile2  className={styles.icons}/><Text>+91&nbsp;&nbsp;7709499930</Text></Flex>
+                   <Flex className={styles.iconsFlex} ><VscGithub className={styles.icons}/><a href="https://github.com/rushi6457" target={'_blank'}>Github profile</a></Flex>
+                   <Flex className={styles.iconsFlex}><SiLinkedin className={styles.icons}/><a href='https://www.linkedin.com/in/rushikesh-patil-4a66b8236' target={'_blank'}>Linkedin profile</a></Flex>
+          </Flex>
+    </div>    
+        // <div id='contacts' className={styles.fullContacts}>
+        //      <form className={styles.form} ref={form} onSubmit={sendEmail}>
+        //         <h1 className={styles.contactHeader}>Connect with Me</h1>
+                  
+        //             <input className={styles.name}  
+        //             type="text" name="user_name"  
+        //               onChange={({target})=>setName(target.value)} 
+        //             placeholder='Enter Name' />
+        //             <br/>
+               
+        //             <inputc/>
+        //             <br/>
+                
+        //             <textarea name="message" 
+        //             className={styles.message }
+        //                onChange={({target})=>setMessage(target.value)} 
+        //             placeholder='Enter Message'  />
+        //             <br />
+        //             <input onClick={onsubmit}    
+        //             className={styles.send} type="submit" value="Send" />
+        //   </form>
+        //     <div>
+        //         <p className={styles.socialMediaheading}>Social Network</p>
+        //         <span className={styles.socialIcons}>
+        //             <a href="https://github.com/rushi6457" target={'_blank'}><VscGithub/></a>
+        //         <a href='https://www.linkedin.com/in/rushikesh-patil-4a66b8236' target={'_blank'}><SiLinkedin/></a>
+        //         </span>
+        //     </div>
+        // </div>
     );
 }
 

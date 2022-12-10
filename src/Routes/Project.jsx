@@ -10,10 +10,20 @@ import css from "../assets/css.png"
 import react from "../assets/react.png"
 import json from "../assets/json.png"
 import swiper from "../assets/swiper.png"
+import html from "../assets/html.jpg"
+import chakra from "../assets/chakra.jpg"
+import gitproject from "../assets/gitproject.png"
+import ipl from "../assets/ipl.png"
+import { useState } from 'react';
+import { ButtonGroup } from 'react-bootstrap';
 
 const Project = () => {
+
+  const [show ,setShow] = useState(false);
+
+  
     return (
-        <div  id='projects'>
+        <div  id='projects' data-aos="fade-up">
             <h1  className='project-main-heading'>My Projects</h1>
             <div className='project-section'>
                 <div className='gear-best'>
@@ -22,7 +32,7 @@ const Project = () => {
                     </div>
                     <div className='gearbest-info'>
                         <h1>Gearbest.com </h1>
-                        <p className='project-description'>Gearbest is the E-commerce website which has wide varities of products. </p>
+                        <p className='project-description'>Gearbest is the E-commerce platform where people can buy wide variety of products from mobile-phones to bicycles at affordable price.  </p>
                         <h4 className='tech-stack-head'>Tech Stack</h4>
                         {/* <Flex w={'100%'} justifyContent='center' gap={'10px'} >
                             <Box>
@@ -46,7 +56,20 @@ const Project = () => {
                                 <Text>Swiper</Text>
                             </Box>
                         </Flex> */}
-                        <span className='tech-stack-span'>
+                         <Flex marginTop={'5%'} width={'100%'} marginBottom='5%' justifyContent='space-evenly'>
+                            <Image className='stack-images' src={react}></Image>
+                            <Image className='stack-images' src={js}></Image>
+                            <Image className='stack-images' src={css}></Image>
+                            <Image className='stack-images' src={swiper}></Image>
+                            <Image className='stack-images' src={json}></Image>
+                            <Image className='stack-images' src={chakra}></Image>
+                        </Flex>
+
+                        <div>
+                            <h3 className='responsibilities-head'>Responsibilities:</h3>
+                            <p textAlign='justify' marginTop='5%'>As this was a individual project so, I was resonsible for creating whole UI also i have done some functionalities like signup,signin, add to cart functionality. This project was created within 4 days</p> 
+                        </div>
+                        {/* <span className='tech-stack-span'>
                              <span> <AiOutlineTags fontSize={'25px'}/>
                            ReactJS</span>
                             <span> <AiOutlineTags fontSize={'25px'}/>
@@ -57,8 +80,8 @@ const Project = () => {
                            JSON-Server</span>
                              <span> <AiOutlineTags fontSize={'25px'}/>
                            Swiper</span>
-                        </span>
-                        <br />
+                        </span> */}
+                       
                         <Flex 
                         marginTop={'50px'}
                         justifyContent='space-evenly'
@@ -74,9 +97,20 @@ const Project = () => {
                     </div>
                     <div className='firstpost-info'>
                         <h1>Firstpost.com </h1>
-                        <p className='project-description'>First post is the news website with latest news of different categories.    </p>
+                        <p className='project-description'>Firstpost is an indian news media website. Users can find world news as well as the regional news live also, it is very easy to access for those people who are not much aware about the internet browsing.</p>
                         <h4 className='tech-stack-head'>Tech Stack</h4>
-                        <span>
+
+                         <Flex marginTop={'5%'} width={'100%'} marginBottom='5%' justifyContent='space-evenly'>
+                            <Image className='stack-images' src={js}></Image>
+                            <Image className='stack-images' src={css}></Image>
+                            <Image className='stack-images' src={html}></Image>
+                        </Flex>
+
+                         <div>
+                            <h3 className='responsibilities-head'>Responsibilities:</h3>
+                            <p textAlign='justify' marginTop='5%'>This was a group project created by total 3 members. My responsibility was to create the navbar of the website with the toggling functionality to side-bar as well as search-bar. </p> 
+                        </div>
+                        {/* <span>
                              <span> <AiOutlineTags fontSize={'25px'}/>
                            JavaScript</span>
                             <span> <AiOutlineTags fontSize={'25px'}/>
@@ -87,8 +121,8 @@ const Project = () => {
                            News API</span>
                              <span> <AiOutlineTags fontSize={'25px'}/>
                            Swiper</span>
-                        </span>
-                        <br />
+                        </span> */}
+                      
                           <Flex align={'center'} 
                             justifyContent='space-evenly'
                           marginTop='60px'
@@ -105,9 +139,21 @@ const Project = () => {
                     <div>
                          <div className='naturebasket-info'>
                         <h1>Nature Basket.com </h1>
-                        <p className='project-description'>Nature Basket is the online grocery E-commerce website with the customer base of all over the world</p>
+                        <p className='project-description'>Nature's Basket is an online supermarket and premium grocery store offers the best online food as well as international grocery shopping experience in India.</p>
                         <h4 className='tech-stack-head'>Tech Stack</h4>
-                        <span>
+                        <Flex width={'100%'} justifyContent='space-evenly' marginBottom={'5%'} marginTop={'5%'}>
+                            <Image className='stack-images' src={html}></Image>
+                            <Image className='stack-images' src={js}></Image>
+                            <Image className='stack-images' src={css}></Image>
+                            <Image className='stack-images' src={swiper}></Image>
+                            <Image className='stack-images' src={json}></Image>
+                        </Flex>
+
+                         <div>
+                            <h3 className='responsibilities-head'>Responsibilities:</h3>
+                            <p textAlign='justify' marginTop='5%'>This was a group project created by total 5 members. My responsibility was to create the footer as well as the some portions of the landing page of the website. </p> 
+                        </div>
+                        {/* <span>
                              <span> <AiOutlineTags fontSize={'25px'}/>
                            ReactJS</span>
                             <span> <AiOutlineTags fontSize={'25px'}/>
@@ -118,19 +164,103 @@ const Project = () => {
                            JSON-Server</span>
                              <span> <AiOutlineTags fontSize={'25px'}/>
                            Swiper</span>
-                        </span>
-                        <br />
+                        </span> */}
+                       
                          <Flex align={'center'} 
                            justifyContent='space-evenly'
                           marginTop='30px'
                           className='demo-button'>
-                       <a href="https://github.com/atalkrpandey/resolute-heat-3745/tree/main/Nature%20Basket" target={'_blank'}><button className='live-demo-button'>LIVE DEMO</button></a>
+                       <a href="https://jazzy-cupcake-d4c618.netlify.app/" target={'_blank'}><button className='live-demo-button'>LIVE DEMO</button></a>
                        <a href="https://github.com/atalkrpandey/resolute-heat-3745/tree/main/Nature%20Basket" target={'_blank'}><button className='github-link-button'>GITHUB Link</button></a>
                        </Flex>
                     </div>
                     </div>
+              
                 </div>
+
             </div>
+                {/* Conditional projects */}
+              
+              <div className={show === true ? 'showProjects' : "hideProjects"}>
+                <div className='project-section'>
+                    <div className='github-search'>
+                      <div className='project-img'>
+                          <img className='project-screenshot' src={gitproject} alt="" />
+                      </div> 
+                      <div className='githubinfo'>
+                          <h1 marginTop='15%'>Github profile search</h1>
+                          <p className='project-description'>This is the simple github username search mini project which was made individually by me. Here anyone can search profiles of github users</p>
+
+                        <h4 className='tech-stack-head'>Tech Stack</h4>
+                        <Flex width={'100%'} justifyContent='space-evenly' marginBottom={'5%'} marginTop={'5%'}>
+                            <Image className='stack-images' src={js}></Image>
+                            <Image className='stack-images' src={css}></Image>
+                            <Image className='stack-images' src={react}></Image>
+                            <Image className='stack-images' src={chakra}></Image>
+                        </Flex>
+
+                          <div>
+                            <h3 className='responsibilities-head'>Responsibilities:</h3>
+                            <p textAlign='justify' marginTop='5%'>This was a mini project so whole project was created by me where i have used Github API for search functionality and also used Chakra UI for UI</p> 
+                        </div>
+
+                      <Flex align={'center'} 
+                           justifyContent='space-evenly'
+                          marginTop='30px'
+                          className='demo-button'>
+                       <a href="https://velvety-blini-4aab7f.netlify.app/" target={'_blank'}><button className='live-demo-button'>LIVE DEMO</button></a>
+                       <a href="https://github.com/rushi6457/github-search" target={'_blank'}><button className='github-link-button'>GITHUB Link</button></a>
+                       </Flex>
+                      </div>
+                </div>
+
+                  <div className='booking-system'>
+                      <div className='project-img' width='100%' height='100%'>
+                          <img className='project-screenshot' src={ipl} alt="" />
+                      </div> 
+
+                       <div className='iplinfo'>
+                          <h1>IPL ticket booking system</h1>
+                          <p className='project-description'>In this project I have applied my learning about Low Level System design. This project is about booking the tickets for different levels of audience like VVIP VIP and general</p>
+
+                        <h4 className='tech-stack-head'>Tech Stack</h4>
+                        <Flex width={'100%'} justifyContent='space-evenly' marginBottom={'5%'} marginTop={'5%'}>
+                            <Image className='stack-images' src={html}></Image>
+                            <Image className='stack-images' src={css}></Image>
+                            <Image className='stack-images' src={js}></Image>
+                        </Flex>
+
+                          <div>
+                            <h3 className='responsibilities-head'>Responsibilities:</h3>
+                            <p textAlign='justify' marginTop='5%'>This was a individual project so, I was resonsible for implementing functionality to creating UI for the project.</p> 
+                        </div>
+
+                      <Flex align={'center'} 
+                           justifyContent='space-evenly'
+                          marginTop='30px'
+                          className='demo-button'>
+                       <a href="https://velvety-blini-4aab7f.netlify.app/" target={'_blank'}><button className='live-demo-button'>LIVE DEMO</button></a>
+                       <a href="https://github.com/rushi6457/github-search" target={'_blank'}><button className='github-link-button'>GITHUB Link</button></a>
+                       </Flex>
+                      </div>
+                  </div>
+                {/* </div> */}
+
+                  {/* <div className='github-search'>
+                      <div className='project-img'>
+                          <img className='project-screenshot' src={gitproject} alt="" />
+                      </div> 
+                  </div> */}
+                </div>
+
+                <div className='ticket-booking'>
+
+                </div>
+
+              </div>
+                  <div className='show-button-div'>
+                      <p className='show-button' onClick={()=>setShow(!show)}>{show ? 'Show Less' : "Show More"}</p> 
+                  </div>
         </div>
     );
 }

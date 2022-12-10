@@ -14,6 +14,7 @@
     padding: 10px;
     padding-left: 10px;
     font-size: 20px;
+    font-size: 1rem;
     letter-spacing: 2px;
 }
 .logo span{
@@ -35,7 +36,7 @@
   
 }
 .navMenu li a{
-    font-size: 1rem;
+    font-size: 0.4rem;
     font-weight: 200;
    
 } 
@@ -62,23 +63,24 @@
     .resumeButton{
        display: initial;
     }
-    .logo{
-        margin-left: -20%;
+  
+    .logo h1{
+        font-size: 50px;
     }
-         /* .logo span{
-             margin-left: -40px;
-         } */
+    .logo span{
+        font-size: 4rem;
+    }
         .hamberger{
             display: initial;
             z-index: 10;
-          
+            font-size: 30px;
         }
         .navMenu li a{
-            font-size: 2.5rem;
+            font-size: 2rem;
             line-height: 45px;
             font-weight: 600;
-         color: rgb(255, 255, 255);
-         text-decoration: none;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
         }
 
     .active{
@@ -101,18 +103,21 @@
 @media screen and (max-width:450px) {
     .header {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
             background-color: black;
             width: 100%;
             align-items: center;
         }
     .logo{
-        font-size: 1rem;
+        font-size: 0.7rem;
        
     }
     .logo span{
         font-size: 2.5rem;
     } 
+    .logo h1{
+        font-size: 2rem;
+    }
     .hamberger {
          display: initial;
          z-index: 10;
@@ -123,12 +128,12 @@
 .resumeButton{
     padding: 5px;
     width: 130px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-top: 0px;
     background-color:tomato;
     color: white;
     border: 0px;
-    border-radius: 50px;
+    border-radius: 10px;
     
 }
 .resumeButton:hover{

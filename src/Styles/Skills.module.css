@@ -46,7 +46,67 @@
     display: block;
     margin: auto;
 }
+.frontEndGrid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 50px;
+}
+.backEndGrid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 50px;
+}
+.skillsHeading{
+    text-align: justify;
+}
 @media screen and (max-width:1040px) {
+
+    .frontEndGrid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+    .frontEndBox{
+        width: 100%;
+
+    }
+     .backEndBox{
+        width: 100%;
+
+    }
+      .backEndGrid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+          gap: 30px;
+    }
+    .mainStack{
+        width: 85%;
+        margin: auto;
+    }
+}
+@media screen and (max-width:450px) {
+    .skillsHeading{
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size: 20px;
+    }
+    .frontEndGrid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+  
+      .backEndGrid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+}
+/* .skillsHeading{
+    text-align: justify;
+} */
+/* @media screen and (max-width:1040px) {
 
     .frontEndSection{
         display: grid;
@@ -100,8 +160,8 @@
         text-align: center;
     }
     
-}
-@media screen and (max-width:450px) {
+} */
+/* @media screen and (max-width:450px) {
 
     .frontEndSection {
         display: grid;
@@ -125,8 +185,8 @@
         .skillsHeading{
             text-align: center;
         }
-}
-
+} */
+/* 
 .swiper {
   width: 100%;
   height: 100%;
@@ -138,7 +198,7 @@
   background: #fff;
 
   /* Center slide text vertically */
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -150,11 +210,11 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-}
+} */
 
-.swiper-slide img {
+/* .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+}  */
