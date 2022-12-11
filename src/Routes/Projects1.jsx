@@ -18,7 +18,7 @@ import { useState } from 'react';
 const Project1 = () =>{
      const [show ,setShow] = useState(false);
     return (
-        <div className="main-projects" id='projects'>
+        <div className="main-projects" id='projects' data-aos="fade-up">
                 <h1 className='project-heading-main'>My Projects</h1>
                 <div className='project-section'>
                  

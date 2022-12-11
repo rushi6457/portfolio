@@ -17,6 +17,7 @@
 .social-contacts{
     width: 100%;
     padding: 20px;
+   
 }
 .icons-details{
     display: flex;
@@ -46,9 +47,7 @@
     font-size: 20px;
     margin-top: 2%;
 }
-.icons-div{
-    /* border: 1px solid white; */
-}
+
 .contacts-heading{
     font-size: 3rem;
     text-align: justify;

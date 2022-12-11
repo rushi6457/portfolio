@@ -6,9 +6,9 @@ import "../Styles/Contacts1.css"
 const Contacts1 = () =>{
 
     return (
-        <>
+        <div id="contacts" data-aos="fade-up">
         <h1 className="contacts-heading">Contacts</h1>
-        <div className="contacts-main">
+        <div className="contacts-main" >
             <div className="form">
                 <form action="" className="form-inner">
                     <input placeholder="Enter Email" className="input"  type="text" />
@@ -31,7 +31,7 @@ const Contacts1 = () =>{
                 </div>
             </div>
         </div>
-        </>
+        </div>
     )
 }
 export default Contacts1;
