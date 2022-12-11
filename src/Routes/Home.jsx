@@ -10,7 +10,7 @@ import asset2 from "../assets/asset2.jpg"
 const Home = () => {
 
     return (
-    <div data-aos="fade-up"  id='home'>
+    <div data-aos="fade-up"  id='home' className='homemain'>
          <div className={styles.mask}>
                 <img className={styles.intoImg} src={asset2} alt=''/>
         </div>

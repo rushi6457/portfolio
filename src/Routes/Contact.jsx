@@ -78,7 +78,7 @@ const Contact = () => {
           </Box> */}
       {/* </Flex> */}
 
-          <Flex className={styles.mainFlex}>
+          <Flex className={styles.mainFlex} id='contacts'>
                 {/* <h3 className={styles.headSocial}>Let's connect over a social media</h3> */}
                    <Flex className={styles.iconsFlex}><ImMobile2  className={styles.icons}/><Text>+91&nbsp;&nbsp;7709499930</Text></Flex>
                    <Flex className={styles.iconsFlex} ><VscGithub className={styles.icons}/><a href="https://github.com/rushi6457" target={'_blank'}>Github profile</a></Flex>

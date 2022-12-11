@@ -2,10 +2,10 @@
     color: white;
     font-size: 50px;
     width: 100%;
+   
 }
-:target{
-    scroll-margin-top: -100px;
-}
+
+
 .profileImage{
 
     width: 60%;

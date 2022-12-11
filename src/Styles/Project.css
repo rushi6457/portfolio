@@ -14,13 +14,10 @@
 }
 .showProjects{
     display: initial;
+   
     
 }
-/* .showProjects{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 30px;
-} */
+
 
  .project-screenshot{
 
@@ -87,11 +84,14 @@
     .project-section {
             display: grid;
             width: 90%;
+            margin: auto;
             grid-template-columns: repeat(1, 1fr);
-            padding: 10px;
+            /* padding: 10px; */
         }
     .gear-best{
         display: grid;
+        /* width: 90%; */
+        margin: auto;
         grid-template-columns: repeat(1,1fr);
         padding: 10px;
     }
@@ -131,8 +131,8 @@
         display: grid;
         grid-template-columns: repeat(1,1fr);
         padding: 10px;
-        margin: auto;
-        width: 100%;
+        /* margin: auto; */
+        /* width: 95%; */
         gap: 20px;
     }
 
@@ -267,7 +267,12 @@
         grid-template-columns: repeat(1, 1fr);
         padding: 10px;
     }
-
+     .showProjects{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+        margin: auto;
+    }
     .firstpost-info {
         width: 100%;
     }
@@ -283,6 +288,12 @@
 
 @media screen and (max-width:550px) {
 
+    .showProjects{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+        margin: auto;
+    }
 
     .first-post {
         display: grid;
@@ -308,7 +319,12 @@
         grid-template-columns: repeat(1, 1fr);
         padding: 10px;
     }
-
+ .showProjects{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+        margin: auto;
+    }
     .naturebasket-info {
         width: 100%;
     }

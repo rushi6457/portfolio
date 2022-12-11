@@ -1,0 +1,117 @@
+.contacts-main{
+   display: flex;
+   justify-content: space-evenly;
+}
+.social-icons{
+    font-size: 30px;
+    color: white; 
+}
+.form-inner{
+    padding: 10px;
+    gap: 10px;
+}
+.form{
+    /* border: 1px solid white; */
+   width: 35%;
+}
+.social-contacts{
+    width: 100%;
+    padding: 20px;
+}
+.icons-details{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   margin-top: 20px;
+}
+.icons-details a{
+    font-size: 20px;
+}
+.input{
+    padding: 15px;
+    font-size: 20px;
+    width: 100%;
+    margin-top: 2%; 
+}
+.input-button{
+     padding: 15px;
+    font-size: 20px;
+    width: 100%;
+    background-color: tomato;
+    color: white;
+    margin-top: 5%;
+}
+.text-area{
+    width: 100%;
+    font-size: 20px;
+    margin-top: 2%;
+}
+.icons-div{
+    /* border: 1px solid white; */
+}
+.contacts-heading{
+    font-size: 3rem;
+    text-align: justify;
+    padding: 5%;
+    
+}
+@media screen and (max-width:1040px) {
+    .contacts-main{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .form{
+        width: 60%;
+        margin: auto;
+    }
+    .icons-div h2{
+        text-align: center;
+       margin-top: 2%;
+      
+    }
+    .icons-div{
+         /* border: 1px solid tomato; */
+         width: 60%;
+         margin: auto;
+    }
+    .social-contacts{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .contacts-heading{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .contacts-main{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .form{
+        display: block;
+        margin: auto;
+        width: 90%;
+    }
+    .icons-div h2{
+        text-align: center;
+       margin-top: 2%;
+      
+    }
+    .icons-div{
+         /* border: 1px solid tomato; */
+         width: 80%;
+         margin: auto;
+    }
+    .social-contacts{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .contacts-heading{
+        text-align: center;
+    }
+}

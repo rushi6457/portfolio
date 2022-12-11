@@ -23,7 +23,7 @@ const Project = () => {
 
   
     return (
-        <div  id='projects' data-aos="fade-up">
+        <div  id='projects' data-aos="fade-up" className='project-Sec'>
             <h1  className='project-main-heading'>My Projects</h1>
             <div className='project-section'>
                 <div className='gear-best'>
@@ -253,9 +253,9 @@ const Project = () => {
                   </div> */}
                 </div>
 
-                <div className='ticket-booking'>
+                {/* <div className='ticket-booking'>
 
-                </div>
+                </div> */}
 
               </div>
                   <div className='show-button-div'>

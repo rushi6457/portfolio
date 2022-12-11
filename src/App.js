@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Routes/Home';
 import About from './Routes/About';
@@ -10,6 +10,8 @@ import HeroImage from './Components/HeroImage';
 import Skills from './Routes/Skills';
 import { useState } from 'react';
 import GitCalender from './Routes/GitCalender'
+import Project1 from './Routes/Projects1';
+import Contacts1 from './Routes/Contact1';
 
 function App() {
 
@@ -17,12 +19,14 @@ function App() {
          
       <div>
         <Navbar/>
-        <Home/>
+         <Home/>
         <About/>
         <Skills/>
         <GitCalender/>
-        <Project/>
-        <Contact/>
+        <Project1/>
+        <Contacts1/>
+         {/* <Project/>  */}
+       {/* <Contact/>  */}
       </div>
     
   );
