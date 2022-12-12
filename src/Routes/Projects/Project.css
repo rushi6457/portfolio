@@ -1,6 +1,9 @@
 .showProjects{
     display: initial;
 }
+#projects{
+    padding-top: 350px;
+}
 .hideProjects{
     display: none;
 }

@@ -12,6 +12,8 @@ import GitCalender from './Routes/GitCalender'
 import Project1 from './Routes/Projects1';
 import Contacts1 from './Routes/Contact1';
 import Project from './Routes/Projects/Project';
+import Footer from './Routes/Footer';
+import Coding from './Routes/Coding';
 
 function App() {
 
@@ -23,9 +25,11 @@ function App() {
         <About/>
         <Skills/>
         <GitCalender/>
+        <Coding/>
         <Project/>
         {/* <Project1/> */}
         <Contacts1/>
+        <Footer/>
          {/* <Project/>  */}
        {/* <Contact/>  */}
       </div>

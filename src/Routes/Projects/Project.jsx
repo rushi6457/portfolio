@@ -10,7 +10,7 @@ const Project = () => {
 
       const [show ,setShow] = useState(false);
     return (
-        <div id='projects' >
+        <div id='projects' data-aos="fade-up">
             <h1 className='main-heading'>Projects</h1>
                 <Project1/>
                 <br />

@@ -46,6 +46,8 @@ const Contacts1 = () =>{
         <h1 className="contacts-heading">Contacts</h1>
         <div className="contacts-main" >
             <div className="form">
+                <h2 className="query-text">Have any query?</h2>
+                <p className="query-text" >Send me your queries here</p>
                 <form action="" className="form-inner">
                     <input 
                     name="user_name"  
@@ -55,17 +57,30 @@ const Contacts1 = () =>{
                      type="text" />
                     <br />
                     <input 
+                    name="user_password"  
+                    onChange={({target})=>setName(target.value)} 
                     placeholder="Enter Password"  
                     className="input" 
                     type="text" />
                     <br />
-                    <textarea placeholder="Enter Message" className="text-area" name="text area" id="" cols="20" rows="5"></textarea>
-                    <button className="input-button"  type="submit">Submit</button>
+                    <textarea 
+                    name="message" 
+                    placeholder="Enter Message" 
+                    onChange={({target})=>setMessage(target.value)} 
+                    className="text-area" 
+                    id="" 
+                    cols="20" 
+                    rows="5"></textarea>
+                    <button 
+                    onClick={onsubmit}  
+                     value="Send"
+                    className="input-button" 
+                    type="submit">Submit</button>
                 </form>
                     
             </div>
             <div className="icons-div">
-                <h2>Follow & connect with me</h2>
+                <h2 className="follow-text">Follow & connect with me</h2>
                 <div className="social-contacts">
                     <Flex className="icons-details"><ImMobile2 className="social-icons"/><a>+91&nbsp;&nbsp;7709499930</a></Flex>
 

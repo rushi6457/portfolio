@@ -7,12 +7,17 @@
     width: 90%;
     height: 100%;
 }
+.image:hover{
+    transform: scale(1.2);
+    background: black;
+  }
 .image-container{
     width: 100%;
 }
 .image{
     width: 100%;
     padding: 10px;
+    transition: transform 0.8s;
 }
 .stack-images{
     width: 50px;

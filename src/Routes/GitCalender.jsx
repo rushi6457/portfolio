@@ -34,7 +34,7 @@ const selectLastHalfYear = contributions => {
             <GitHubCalendar style={{margin:'auto' ,color:'tomato' , width:'100%'}}
                 username='rushi6457'
                 transformData={selectLastHalfYear}
-                hideColorLegend
+                // hideColorLegend
         />
         </div>
         </div>

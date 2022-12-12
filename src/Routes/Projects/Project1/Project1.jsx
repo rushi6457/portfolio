@@ -18,7 +18,7 @@ import { useState } from 'react';
 
 const Project1 = () => {
     return (
-        <div className='project1'>
+        <div className='project1' data-aos="fade-up">
             <div className="image-container">
                 <img src={gearbest} alt="" className="image" />
             </div>

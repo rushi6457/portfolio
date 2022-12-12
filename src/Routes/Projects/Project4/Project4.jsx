@@ -18,13 +18,13 @@ import { useState } from 'react';
 
 const Project1 = () => {
     return (
-        <div className='project1'>
+        <div className='project1' data-aos="fade-up">
             <div className="image-container">
                 <img src={gitproject} alt="" className="image" />
             </div>
             <div className="info-container">
-                <h1 className='project-heading'>Gearbest.com</h1>
-                <p className='project-description'>Gearbest is the E-commerce platform where people can buy wide variety of products from mobile-phones to bicycles at affordable price.</p>
+                <h1 className='project-heading'>Github profile search</h1>
+                <p className='project-description'>This is the simple github username search mini project which was made individually by me. Here anyone can search profiles of github users.</p>
                 <h4 className='tech-stack-head'>Tech Stack</h4>
                  <Flex justifyContent='space-evenly' className='tech-stack-info'>
                             <Image className='stack-images' src={react}></Image>
@@ -35,12 +35,12 @@ const Project1 = () => {
                 </Flex>
                 <div>
                         <h3 className='responsibilities-head'>Responsibilities:</h3>
-                        <p className='respon-text'>As this was a individual project so, I was resonsible for creating whole UI also i have done some functionalities like signup,signin, add to cart functionality. This project was created within 4 days</p> 
+                        <p className='respon-text'>This was a mini project so whole project was created by me where i have used Github API for search functionality and also used Chakra-UI for styling. </p> 
                 </div>
                 <Flex className='demo-button'>
-                    <a href="https://gearbest-project-eta.vercel.app/" target={'_blank'}>
+                    <a href="https://velvety-blini-4aab7f.netlify.app/" target={'_blank'}>
                     <button className='live-demo-button'>LIVE DEMO</button></a> 
-                    <a href="https://github.com/rushi6457/prime-move-3249/tree/main/gearbest.com" target={'_blank'}>
+                    <a href="https://github.com/rushi6457/github-search" target={'_blank'}>
                     <button className='github-link-button'>GITHUB Link</button></a>
                 </Flex>
             </div>

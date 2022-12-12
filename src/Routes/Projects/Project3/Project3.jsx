@@ -18,28 +18,29 @@ import { useState } from 'react';
 
 const Project1 = () => {
     return (
-        <div className='project1'>
+        <div className='project1' data-aos="fade-up">
             <div className="image-container">
                 <img src={naturebasket} alt="" className="image" />
             </div>
             <div className="info-container">
-                <h1 className='project-heading'>Gearbest.com</h1>
-                <p className='project-description'>Gearbest is the E-commerce platform where people can buy wide variety of products from mobile-phones to bicycles at affordable price.</p>
+                <h1 className='project-heading'>Nature Basket.com</h1>
+                <p className='project-description'>Nature's Basket is an online supermarket and premium grocery store offers the best online food as well as international grocery shopping experience in India.</p>
                 <h4 className='tech-stack-head'>Tech Stack</h4>
                  <Flex justifyContent='space-evenly' className='tech-stack-info'>
                             <Image className='stack-images' src={html}></Image>
                             <Image className='stack-images' src={css}></Image>
                             <Image className='stack-images' src={js}></Image>
                             <Image className='stack-images' src={swiper}></Image>
+                            <Image className='stack-images' src={json}></Image>
                 </Flex>
                 <div>
                         <h3 className='responsibilities-head'>Responsibilities:</h3>
-                        <p className='respon-text'>As this was a individual project so, I was resonsible for creating whole UI also i have done some functionalities like signup,signin, add to cart functionality. This project was created within 4 days</p> 
+                        <p className='respon-text'>This was a group project created by total 5 members. My responsibility was to create the footer as well as the some portions of the landing page of the website. </p> 
                 </div>
                 <Flex className='demo-button'>
-                    <a href="https://gearbest-project-eta.vercel.app/" target={'_blank'}>
+                    <a href="https://jazzy-cupcake-d4c618.netlify.app" target={'_blank'}>
                     <button className='live-demo-button'>LIVE DEMO</button></a> 
-                    <a href="https://github.com/rushi6457/prime-move-3249/tree/main/gearbest.com" target={'_blank'}>
+                    <a href="https://github.com/atalkrpandey/resolute-heat-3745/tree/main/Nature%20Basket" target={'_blank'}>
                     <button className='github-link-button'>GITHUB Link</button></a>
                 </Flex>
             </div>
