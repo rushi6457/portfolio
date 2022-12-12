@@ -9,6 +9,11 @@ import styles from "../Styles/Home.module.css"
 import asset2 from "../assets/asset2.jpg"
 const Home = () => {
 
+    const handleDownload = () =>{
+
+        
+    }
+
     return (
     <div data-aos="fade-up"  id='home' className='homemain'>
          <div className={styles.mask}>
@@ -28,7 +33,7 @@ const Home = () => {
                 <button>Projects</button>
                </Link>
                <Link className={styles.btnLight} to='contacts'spy={true} smooth={true} offset={100} duration={1000}>
-                <button>Contact</button>
+                <button onClick={handleDownload}>Contact</button>
                </Link>
                 {/* <Link to='/projects'  className={styles.btn}>Projects</Link>
                   <Link to='/conatct' className={styles.btnLight}>Contacts</Link> */}

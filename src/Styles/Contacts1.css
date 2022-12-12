@@ -3,8 +3,8 @@
    justify-content: space-evenly;
 }
 .social-icons{
-    font-size: 30px;
-    color: white; 
+    font-size: 35px;
+    color: tomato; 
 }
 .form-inner{
     padding: 10px;
@@ -21,12 +21,14 @@
 }
 .icons-details{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
    margin-top: 20px;
 }
 .icons-details a{
     font-size: 20px;
+    text-align: justify;
+    
 }
 .input{
     padding: 15px;
@@ -47,7 +49,12 @@
     font-size: 20px;
     margin-top: 2%;
 }
-
+.icons-div{
+    width: 30%
+}
+.icons-div h2{
+    text-align: center;
+}
 .contacts-heading{
     font-size: 3rem;
     text-align: justify;

@@ -21,17 +21,17 @@ const selectLastHalfYear = contributions => {
     });
   };
     return (
-        <div data-aos="fade-up">
+        <div data-aos="fade-up" id='github'>
             <h2 color='white' className={styles.statsHeadLanguage}>My Github Stats</h2>
         
             <div className={styles.mainStats}>
-            <img data-aos="flip-left" className={styles.gitStats}  src="https://github-readme-stats.vercel.app/api?username=rushi6457&show_icons=true&locale=en" alt="rushi6457" />
+            <img color='tomato' data-aos="flip-left" className={styles.gitStats}  src="https://github-readme-stats.vercel.app/api?username=rushi6457&show_icons=true&locale=en" alt="rushi6457" />
             <img data-aos="flip-right" className={styles.streakImg}  src="https://github-readme-streak-stats.herokuapp.com/?user=rushi6457&" alt="rushi6457" />
             </div>
             <h3 style={{textAlign:'center',marginBottom:"20px", fontSize:'30px' ,textDecoration:'underline'}}>Git calender</h3>
             {/* <img className={styles.gitcalender} src={gitcalender} alt="" /> */}
             <div className={styles.calender} data-aos="flip-right" >
-            <GitHubCalendar style={{margin:'auto' ,color:'white' , width:'100%'}}
+            <GitHubCalendar style={{margin:'auto' ,color:'tomato' , width:'100%'}}
                 username='rushi6457'
                 transformData={selectLastHalfYear}
                 hideColorLegend

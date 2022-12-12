@@ -1,0 +1,19 @@
+.showProjects{
+    display: initial;
+}
+.hideProjects{
+    display: none;
+}
+.show-button{
+    text-align: center;
+    font-size: 1.5rem;
+    color: tomato;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.main-heading{
+    font-size: 3rem;
+    text-align: justify;
+    padding: 5%;
+    margin-top: -10%;
+}

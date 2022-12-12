@@ -161,10 +161,10 @@ const Project1 = () =>{
                                     <p className='respon-text'>This was a individual project so, I was resonsible for implementing functionality to creating UI for the project.</p> 
                                 </div>
                                  <Flex className='demo-button'>
-                                    <a href="https://velvety-blini-4aab7f.netlify.app/" target={'_blank'}>
+                                    <a href="https://cosmic-gingersnap-07f444.netlify.app" target={'_blank'}>
                                         <button className='live-demo-button'>LIVE DEMO</button>
                                     </a>
-                                    <a href="https://github.com/rushi6457/github-search" target={'_blank'}>
+                                    <a href="https://github.com/rushi6457/ticket-booking-system" target={'_blank'}>
                                         <button className='github-link-button'>GITHUB Link</button>
                                     </a>
                                     </Flex>

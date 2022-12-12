@@ -1,9 +1,8 @@
 import logo from './logo.svg';
-// import './App.css';
+import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Routes/Home';
 import About from './Routes/About';
-import Project from './Routes/Project';
 import Contact from './Routes/Contact';
 import Navbar from './Components/Navbar';
 import HeroImage from './Components/HeroImage';
@@ -12,18 +11,20 @@ import { useState } from 'react';
 import GitCalender from './Routes/GitCalender'
 import Project1 from './Routes/Projects1';
 import Contacts1 from './Routes/Contact1';
+import Project from './Routes/Projects/Project';
 
 function App() {
 
   return (
          
-      <div>
+      <div className='app'>
         <Navbar/>
          <Home/>
         <About/>
         <Skills/>
         <GitCalender/>
-        <Project1/>
+        <Project/>
+        {/* <Project1/> */}
         <Contacts1/>
          {/* <Project/>  */}
        {/* <Contact/>  */}
