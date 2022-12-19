@@ -47,7 +47,7 @@ const Navbar = () => {
                         <Link activeClass={styles.active} to="contacts" spy={true} smooth={true} offset={50} duration={1000}><RiContactsBookLine className={styles.navbarIcons}/>Contacts</Link>
                 </li>
                   <li>
-                    <a href='https://drive.google.com/file/d/1NArCjRTp9a0ZPFTInAh2qCXHWzCAYTYJ/view?usp=sharing'>
+                    <a target={'_blank'} href='https://drive.google.com/file/d/1zfgAqNIhGAsOxJNGAeF6KY0cxF45find/view?usp=sharing'>
                         <button className={styles.resumeButton}><AiOutlineDownload fontSize={'20px'}/>Resume</button>
                     </a>
                 </li>
