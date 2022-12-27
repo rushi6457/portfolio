@@ -32,7 +32,7 @@ const Skills = () => {
         data-aos="fade-up"
         className={styles.mainStack} 
         marginTop={'5%'}
-        width={'85%'} 
+        width={'80%'} 
         margin='auto'>
                 <Heading 
                     className={styles.skillsHeading}

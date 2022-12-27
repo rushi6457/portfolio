@@ -4,7 +4,7 @@ import "../Styles/Footer.css";
 const Footer = () => {
     return (
         <div className='footer'>
-            <p>Copyright © 2022 Rushikesh Patil. All Rights Reserved.</p>
+            <p>Copyright © 2022 Rushikesh Patil. All Rights Reserved.Made with 💚 by Rushikesh Patil</p>
         </div>
     );
 }
