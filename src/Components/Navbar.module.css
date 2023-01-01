@@ -36,7 +36,7 @@
   
 }
 .navMenu li a{
-    font-size: 0.4rem;
+    font-size: 1rem;
     font-weight: 200;
    
 } 
@@ -73,7 +73,7 @@
         .hamberger{
             display: initial;
             z-index: 10;
-            font-size: 30px;
+            font-size: 2rem;
         }
         .navMenu li a{
             font-size: 2rem;
@@ -129,12 +129,12 @@
 .resumeButton{
     padding: 5px;
     width: 130px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-top: 0px;
     background-color:tomato;
     color: white;
     border: 0px;
-    border-radius: 10px;
+    border-radius: 30px;
     
 }
 .resumeButton:hover{

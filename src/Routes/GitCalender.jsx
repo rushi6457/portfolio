@@ -1,13 +1,12 @@
 import React from 'react';
 import GithubStats from '../Components/GithubStats';
 import styles from "../Styles/GitStats.module.css"
-import gitcalender from "../assets/gitcalender.png"
-import GitHubCalendar from 'react-github-calendar'
+import GitHubCalendar from 'react-github-calendar';
 const GitCalender = () => {
 const selectLastHalfYear = contributions => {
     const currentYear = new Date().getFullYear();
     const currentMonth = new Date().getMonth();
-    const shownMonths = 8;
+    const shownMonths = 12;
 
     return contributions.filter(day => {
       const date = new Date(day.date);
@@ -31,11 +30,9 @@ const selectLastHalfYear = contributions => {
             <h3 style={{textAlign:'center',marginBottom:"20px", fontSize:'30px' ,textDecoration:'underline'}}>Git calender</h3>
             {/* <img className={styles.gitcalender} src={gitcalender} alt="" /> */}
             <div className={styles.calender} data-aos="flip-right" >
-            <GitHubCalendar style={{margin:'auto' ,color:'tomato' , width:'100%'}}
-                username='rushi6457'
-                transformData={selectLastHalfYear}
-                // hideColorLegend
-        />
+        
+                    <GitHubCalendar 
+                    style={{margin:'auto' ,color:'tomato' , width:'100%'}} username="rushi6457" />
         </div>
         </div>
     );

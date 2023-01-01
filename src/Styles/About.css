@@ -4,32 +4,42 @@
     width: 100%;
    
 }
-
-
+.para{
+      font-size: 1.5rem;
+}
+.details-full{
+    width: 100%;
+    font-size: 1.5rem;
+    /* padding-left: 5%; */
+}
 .profileImage{
 
-    width: 60%;
+    width: 90%;
     /* margin-left: 150px; */
-    border-radius: 50%;
-    margin-left: 30%;
+    border-radius: 100%;
+    margin-left: 20%;
 }
-
 #about{
-       display: grid;
+       /* display: grid;
        grid-template-columns: repeat(2,1fr);
-        gap: 50px;
-        /* padding: 200px; */
+       margin: auto; */
+       display: flex;
+       justify-content: center;
+       align-items: center;
         padding-top: 250px;
-        margin-bottom: 100px;
         width: 90%;
-        /* padding: 20px; */
-        margin: auto;
+      
 }
 .text-about{
-    text-align: justify;
-    font-size: 20px;
-    width: 130%;
+     display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-bottom: 100px;
+    width: 100%;
+     padding: 20px;
+     text-align: justify;
+     padding-left: 5%;
 }
+
 @media screen and (max-width:1050px) {
        #about{
             display: grid;

@@ -49,15 +49,26 @@
 .frontEndGrid{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 50px;
+    gap: 10%;
 }
 .backEndGrid{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 50px;
+   gap: 10%;
 }
 .skillsHeading{
     text-align: justify;
+}
+.backEndBox h2{
+    margin-top: 10%;
+}
+.box{
+    border-radius: 10%;
+    padding: 2%;
+}
+.text{
+     border-radius: 20%;
+     padding: 2%;
 }
 @media screen and (max-width:1040px) {
 
@@ -68,7 +79,7 @@
     }
     .frontEndBox{
         width: 100%;
-
+      
     }
      .backEndBox{
         width: 100%;
@@ -87,9 +98,9 @@
 @media screen and (max-width:450px) {
     .skillsHeading{
         text-align: center;
-        margin-top: 5%;
+        margin-top: 10%;
         margin-bottom: 5%;
-        font-size: 20px;
+        font-size: 35px;
     }
     .frontEndGrid{
         display: grid;
@@ -103,118 +114,3 @@
         gap: 20px;
     }
 }
-/* .skillsHeading{
-    text-align: justify;
-} */
-/* @media screen and (max-width:1040px) {
-
-    .frontEndSection{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        margin: auto;
-        margin-top: 50px;
-        padding-left: 20%;
-
-    }
-        .SkillsSection {
-            display: block;
-            margin: auto;
-            flex-direction: column;
-        }
-    .skillsHeading{
-        margin-top: 50px;
-        margin-bottom: 50px;
-        text-align: center;
-    }
-    .backEndSection{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin: auto;
-        margin-top: 50px;
-    padding-left: 20%;
-    }
-}
-@media screen and (max-width:650px) {
-        .frontEndSection{
-            display: grid;
-            grid-template-columns: repeat(1,1fr);
-           margin: auto;
-           margin-top: 50px;
-            padding-left: 20%;
-    
-    }
-        .SkillsSection {
-            display: block;
-            margin: auto;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .backEndSection{
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            margin: auto;
-            margin-top: 50px;
-            padding-left: 20%;
-    }
-    .skillsHeading{
-        text-align: center;
-    }
-    
-} */
-/* @media screen and (max-width:450px) {
-
-    .frontEndSection {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        margin-top: 50px;
-        padding-left: 20%;
-    }
-    .backEndSection{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-         margin: auto;
-        margin-top: 50px;
-        padding-left: 20%;
-    }
-        .SkillsSection {
-            display: block;
-            margin: auto;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .skillsHeading{
-            text-align: center;
-        }
-} */
-/* 
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  /* display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-} */
-
-/* .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}  */

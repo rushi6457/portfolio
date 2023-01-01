@@ -5,6 +5,7 @@ import {SiLinkedin} from "react-icons/si";
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import {TfiEmail} from "react-icons/tfi";
+import Footer from './Footer';
 import "../Styles/Contacts1.css"
 const Contacts1 = () =>{
 
@@ -92,6 +93,7 @@ const Contacts1 = () =>{
                 </div>
             </div>
         </div>
+        <Footer/>
         </div>
     )
 }

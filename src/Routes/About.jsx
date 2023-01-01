@@ -12,9 +12,11 @@ const About = () => {
        className='about-section' id='about'>
             <div className='text-about'>
                 <h1 className='aboutHeading'>About Me</h1>
-                <p>Hey, I'm Rushikesh Patil Full-Stack Web Developer</p>
+                {/* <div className='details'> */}
+                <p className="para">Hey, I'm Rushikesh Patil Full-Stack Web Developer</p>
                 <br />
-                <p>A passionate Full-stack web developer with strong technical as well as commuication skills, goal oriented programmer who is able to write an efficient and clean code using MERN stack. In past few months I have worked on JavaScript,Typescript,Redux and frameworks like Node JS. I have used front-end libraries like React-Js also I have worked on backend technologies such as MongoDb, express JS in this duration. Apart from that I'm a B-tech graduate in Mechanical from D.Y.Patil Institute of Engineering, Pune </p>
+                <p className="details-full">A passionate Full-stack web developer with strong technical as well as commuication skills, goal oriented programmer who is able to write an efficient and clean code using MERN stack. In past few months I have worked on JavaScript,Typescript,Redux and frameworks like Node JS. I have used front-end libraries like React-Js also I have worked on backend technologies such as MongoDb, express JS in this duration. Apart from that I'm a B-tech graduate in Mechanical from D.Y.Patil Institute of Engineering, Pune </p>
+                {/* </div> */}
             </div>
             <div>
                 <img src={pic2} className='profileImage'/>

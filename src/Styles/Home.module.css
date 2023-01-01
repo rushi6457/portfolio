@@ -3,21 +3,7 @@
     height: 100vh;
     position: relative;
 }
-/* #home{
-    padding-top: 400px;
-} */
-/* :target{
-    scroll-margin-top: 500px;
-} */
-/* *{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-} */
-/* .homemain{
-    width: 100vw;
-    height: 100vh;
-} */
+
 .intoImg {
     width: 100vw;
     height: 100vh;
@@ -111,6 +97,7 @@
     background: rgb(65, 64, 64);
     padding: 12px 32px;
     color: white;
+    text-transform: uppercase;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
