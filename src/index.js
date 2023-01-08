@@ -13,7 +13,7 @@ root.render(
     // <BrowserRouter>
     // <ChakraProvider>
         <App />
-    /* </ChakraProvider> */
+     /* </ChakraProvider>  */
      /* </BrowserRouter>  */
 
 );

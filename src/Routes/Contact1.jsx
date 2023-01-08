@@ -7,9 +7,11 @@ import emailjs from '@emailjs/browser';
 import {TfiEmail} from "react-icons/tfi";
 import Footer from './Footer';
 import "../Styles/Contacts1.css"
+import { Alert } from "react-bootstrap";
+
 const Contacts1 = () =>{
 
-       const [show,setShow] = useState(true)
+    const [show,setShow] = useState(true)
     const [auth,setAuth] = useState(false)
     const [name,setName] = useState('')
     const [email,setEmail] = useState('')
@@ -21,23 +23,25 @@ const Contacts1 = () =>{
         setLoading(true)
     e.preventDefault();
 
-    emailjs.sendForm('service_hx4boim', 'template_mxsh6ri', form.current, 'zYKXfdbRCb8WRJeN0')
+    emailjs.sendForm("service_yflma3m","template_mxsh6ri", form.current, "zYKXfdbRCb8WRJeN0")
       .then((result) => {
           console.log(result.text);
           setLoading(false)
-        return  alert("Message send successfully")
-        
+          alert("Email sent successfully")
       }, (error) => {
           console.log(error.text);
         return  alert("Something went wrong")
       });
   };
 
-
+ 
   const onsubmit = (e) =>{
     e.preventDefault()
     if(name !== '' && email !== '' && message !== '' ){
         return alert("Message send successfully")
+    }
+    else{
+      return alert("Please fill all input fields")
     }
   }
 
@@ -49,31 +53,34 @@ const Contacts1 = () =>{
             <div className="form">
                 <h2 className="query-text">Have any query?</h2>
                 <p className="query-text" >Send me your queries here</p>
-                <form action="" className="form-inner">
+                <form action="" className="form-inner"  ref={form} onSubmit={sendEmail}>
+                   <input 
+                     type="text" 
+                    name="user_name" 
+                    onChange={({target})=>setName(target.value)} 
+                    placeholder="Enter Name" 
+                    className="input" 
+                    />
+                     <br />
                     <input 
-                    name="user_name"  
+                    type="email" 
+                    name="user_email"
                     onChange={({target})=>setName(target.value)} 
                     placeholder="Enter Email" 
                     className="input" 
-                     type="text" />
-                    <br />
-                    <input 
-                    name="user_password"  
-                    onChange={({target})=>setName(target.value)} 
-                    placeholder="Enter Password"  
-                    className="input" 
-                    type="text" />
-                    <br />
+                  />
+                     <br />
                     <textarea 
                     name="message" 
-                    placeholder="Enter Message" 
+                    placeholder="Enter your query" 
                     onChange={({target})=>setMessage(target.value)} 
                     className="text-area" 
                     id="" 
                     cols="20" 
                     rows="5"></textarea>
+                    {/* <input className="input-button"  type="submit" value="Send"  /> */}
                     <button 
-                    onClick={onsubmit}  
+                    onClick={onsubmit}
                      value="Send"
                     className="input-button" 
                     type="submit">Submit</button>

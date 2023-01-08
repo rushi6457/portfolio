@@ -54,6 +54,7 @@
     background-color: tomato;
     color: white;
     margin-top: 5%;
+    cursor: pointer;
 }
 .text-area{
     width: 100%;

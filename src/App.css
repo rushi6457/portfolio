@@ -60,3 +60,30 @@
   text-align: center;
   color: tomato;
 }
+
+@media screen and (max-width:650px) and (min-width:250px) {
+
+        .flex {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            margin-top: 0%;
+          }
+        
+          .fade {
+            /* margin-top: 45%; */
+            font-size: 60px;
+            text-align: center;
+            /* margin-left: 50%; */
+          }
+        
+          .fade2 {
+            font-size: 60px;
+            /* margin-top: 50%; */
+            text-align: center;
+            color: tomato;
+          }
+}
